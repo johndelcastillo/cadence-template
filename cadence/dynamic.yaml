@@ -1,0 +1,6 @@
+# Configure dynamic values here:
+# https://github.com/uber/cadence/blob/master/config/dynamicconfig/development.yaml
+
+limit.maxIDLength:
+  - value: 255
+    constraints: {}
