@@ -1,6 +1,6 @@
 FROM ubercadence/server:master-auto-setup
 
-ARG DB DBNAME DB_PORT POSTGRES_USER POSTGRES_PWD POSTGRES_SEEDS
+ARG DB DBNAME DB_PORT POSTGRES_USER POSTGRES_PWD POSTGRES_SEEDS FRONTEND_SERVICE
 
 COPY dynamic.yaml /etc/cadence/config/dynamicconfig/dynamic.yaml
 
