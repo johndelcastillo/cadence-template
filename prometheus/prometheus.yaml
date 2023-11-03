@@ -1,0 +1,12 @@
+global:
+  scrape_interval: 5s
+  external_labels:
+    monitor: 'cadence-monitor'
+scrape_configs:
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: # addresses to scrape
+          - 'cadence-server:8000'
+          - 'cadence-server:8001'
+          - 'cadence-server:8002'
+          - 'cadence-server:8003'
